@@ -7,11 +7,13 @@ import {
   Modal,
   FlatList,
 } from 'react-native';
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Picker} from '@react-native-community/picker';
 import moment from 'moment';
 import DatePicker from 'react-native-date-picker';
 import CountDown from 'react-native-countdown-component';
+
 import {STYLES} from './HomeSreen.styles';
 
 export default function HomeSreen() {
