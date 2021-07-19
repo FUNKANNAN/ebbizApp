@@ -11,13 +11,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Picker} from '@react-native-community/picker';
 import moment from 'moment';
 import DatePicker from 'react-native-date-picker';
-import {useNavigation} from '@react-navigation/native';
-// import  CountdownCircleTimer  from 'react-countdown-circle-timer'
 import CountDown from 'react-native-countdown-component';
 import {STYLES} from './HomeSreen.styles';
 
-export default function HomeSreen({route}) {
-  const navigation = useNavigation();
+export default function HomeSreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [users, setUsers] = useState([]);
   const [booking, setBooking] = useState([]);
@@ -56,10 +53,6 @@ export default function HomeSreen({route}) {
     const newAllAppoint = [...booking, userAppoint];
     setBooking(newAllAppoint);
     storeData(JSON.stringify(newAllAppoint));
-  };
-
-  const timerFunction = () => {
-    return <Text>789</Text>;
   };
 
   const getCalculatedTime = data => {

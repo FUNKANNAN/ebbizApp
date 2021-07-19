@@ -40,7 +40,7 @@ export const STYLES = StyleSheet.create({
     marginTop: 30,
     borderRadius: 5,
     elevation: 5,
-    borderWidth:0.5,
+    borderWidth: 0.5,
   },
   datePickerView: {
     margin: 15,
@@ -70,8 +70,16 @@ export const STYLES = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  textModelHeading: {color: 'white', fontSize: 14, fontWeight: 'bold', flex: 9},
-  modelCloseIcon:{flex:1, borderRadius:30},
+  textModelHeading: {
+    color: 'white',
+    fontSize: 14,
+    fontWeight: 'bold',
+    flex: 9,
+  },
+  modelCloseIcon: {
+    flex: 1,
+    borderRadius: 30,
+  },
   modelCloseIcon: {
     width: 25,
     height: 25,
@@ -82,18 +90,18 @@ export const STYLES = StyleSheet.create({
     padding: 10,
     flexDirection: 'row',
     borderBottomWidth: 2,
-    borderColor:"#2196f3",
+    borderColor: '#2196f3',
   },
   textSlNo: {
     flex: 1,
-    alignSelf:"center"
+    alignSelf: 'center',
   },
   textName: {
     flex: 6,
-    alignSelf:"center"
+    alignSelf: 'center',
   },
   textCountDown: {
     flex: 6,
-    alignSelf:"center"
+    alignSelf: 'center',
   },
 });
