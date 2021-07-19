@@ -32,7 +32,6 @@ export default function HomeSreen({route}) {
       const jsonValue1 = await AsyncStorage.getItem('bookings');
       let resp1 = await jsonValue1;
       if (resp1) {
-        console.log('---1');
         setBooking(JSON.parse(resp1));
       }
     } catch (e) {
@@ -56,8 +55,6 @@ export default function HomeSreen({route}) {
     const userAppoint = {Name: dropDownUser, Time: date.toString()};
     const newAllAppoint = [...booking, userAppoint];
     setBooking(newAllAppoint);
-    console.log(userAppoint);
-    console.log(newAllAppoint);
     storeData(JSON.stringify(newAllAppoint));
   };
 
@@ -66,11 +63,9 @@ export default function HomeSreen({route}) {
   };
 
   const getCalculatedTime = data => {
-    console.log(data);
     const prev = moment(new Date(data.Time), 'H:mm:ss');
     const now = moment(new Date(), 'H:mm:ss');
     let diff = moment(prev).diff(moment(now), 'seconds');
-    console.log(diff);
     return diff;
   };
 
